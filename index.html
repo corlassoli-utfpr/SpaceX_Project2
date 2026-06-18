@@ -69,6 +69,18 @@
 
         </nav>
 
+        <section class="buscaContainer">
+
+            <input
+                type="text"
+                id="campoBusca"
+                placeholder="Search SpaceX missions..."
+            >
+
+            <p id="mensagemErro"></p>
+
+        </section>
+
         <aside class="opcao upcoming">
             UPCOMING LAUNCHES
 
@@ -128,7 +140,22 @@
 
             <section class="opcaoCentro">EXPLORE</section>
         </section>
+
+        <section class="resultadoContainer">
+            RESULTS
+
+            <div id="resultados"></div>
+
+        </section>
+
+        <section class="favoritosContainer">
+            FAVORITES
+
+            <div id="favoritos"></div>
+
+        </section>
     </main>
 
+    <script src="spacex.js"></script>
 </body>
 </html>

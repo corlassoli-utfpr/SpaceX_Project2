@@ -6,7 +6,8 @@ body { /*Aqui se manipula o background*/
     background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Mars_Web_8fafe15a48.jpg);
     background-position: center 30%;
     background-size: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 header {
@@ -185,6 +186,8 @@ header {
 .centro { /*Divisa que contém o texto central*/
     height: 850px;
     display: flex;
+    position: relative;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -310,4 +313,53 @@ header {
         background-repeat: no-repeat;
         background-color: black;
     }
+}
+
+.buscaContainer {
+    margin-right: 10%;
+    margin-top: 1%;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+
+.resultadoContainer {
+    position: absolute;
+    left: 1100px;
+    top: 20px;
+    color: white;
+    width: 300px;
+}
+
+.favoritosContainer {
+    position: absolute;
+    right: 190px;
+    top: 20px;
+    color: white;
+    width: 300px;
+}
+
+.cardMissao,
+.cardFavorito {
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    border-radius: 10px;
+
+    background: rgba(0,0,0,0.75);
+
+    backdrop-filter: blur(4px);
+
+    padding: 12px;
+
+    margin-bottom: 12px;
+
+    width: 250px;
+}
+
+.cardMissao img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
 }
