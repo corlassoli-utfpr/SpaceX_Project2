@@ -325,7 +325,7 @@ header {
 
 .resultadoContainer {
     position: absolute;
-    left: 1100px;
+    left: 1070px;
     top: 20px;
     color: white;
     width: 300px;
@@ -333,7 +333,7 @@ header {
 
 .favoritosContainer {
     position: absolute;
-    right: 190px;
+    right: 240px;
     top: 20px;
     color: white;
     width: 300px;
@@ -341,19 +341,12 @@ header {
 
 .cardMissao,
 .cardFavorito {
-
-    border: 1px solid rgba(255,255,255,0.2);
-
-    border-radius: 10px;
-
-    background: rgba(0,0,0,0.75);
-
-    backdrop-filter: blur(4px);
-
-    padding: 12px;
-
-    margin-bottom: 12px;
-
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background: darkslategray;
+    backdrop-filter: blur(6px);
+    padding: 10px;
+    margin-bottom: 10px;
     width: 250px;
 }
 
